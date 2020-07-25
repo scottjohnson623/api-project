@@ -40,6 +40,7 @@ async function server() {
   //         res.send(users);
   //       });
   //   });
+
   app.post("/", (req, res) => {
     console.log(req.body);
     let user = new User();
@@ -48,6 +49,20 @@ async function server() {
       console.log(user);
     }
     userRepo.save(user).then((user) => res.send(user));
+  });
+
+  app.patch("/", (req, res) => {
+    let changes = req.body;
+    userRepo.update(changes.id, changes).then(() => {
+      res.status(200).send();
+    });
+  });
+
+  app.delete("/", (req, res) => {
+    let id = req.body;
+    userRepo.delete(id).then(() => {
+      res.status(200).send("Deleted");
+    });
   });
   app.listen(port, () =>
     console.log(`Example app listening at http://localhost:${port}`)
