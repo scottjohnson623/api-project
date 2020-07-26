@@ -34,16 +34,7 @@ async function server() {
     let id = req.params.id;
     userRepo.findOne(id).then((user) => res.send(user));
   });
-
-  //   app.get("favmoviegenre", (req, res) => {
-  //     userRepo
-  //       .createQueryBuilder("user")
-  //       .where()
-  //       .then((users) => {
-  //         res.send(users);
-  //       });
-  //   });
-
+  app.get("/members", (req, res) => {});
   app.post("/", (req, res) => {
     console.log(req.body);
     let user = new User();
@@ -51,7 +42,7 @@ async function server() {
       user[key] = req.body[key];
       console.log(user);
     }
-    userRepo.save(user).then((user) => res.send(user));
+    userRepo.save(user).then((user) => res.status(200).send());
   });
 
   app.patch("/", (req, res) => {

@@ -1,91 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+	Intensify by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
   <head>
+    <title>Offical SpaghettiO's Fan Club</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Node.js Express REST API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-
   <body>
-    <div class="container">
-    <form action="http://localhost:3000/" method="post">
-      <div class="row">
-        <div class="col-25">
-      <label for="first_name">First Name</label>
-    </div>
-    <div class="col-75">
-      <input type="text" name="first_name" id="first_name" placeholder="first name here..." /> 
-    </div>
-  </div>
-      <div class="row">
-        <div class="col-25">
-      <label for="last_name">Last Name</label>
-    </div>
-    <div class="col-75">
-      <input type="text" name="last_name" id="last_name" placeholder="last name here..." /> 
-    </div>
-  </div>
-      <div class="row">
-        <div class="col-25">
-      <label for="Email">email</label>
-    </div>
-    <div class="col-75">
-      <input type="text" name="email" id="email" placeholder="e.g. 'johnsmith@youremail.com'"" /> 
-    </div>
-  </div>
-      <div class="row">
-        <div class="col-25">
-      <label for="Gender">Gender</label>
-    </div>
-    <div class="col-75">
-     <select name="Gender" id="Gender">
-       <option value="Male"> Male</option>
-       <option value="Female">Female</option></select> 
-    </div>
-  </div>
-      <div class="row">
-        <div class="col-25">
-      <label for="favoriteanimal">Favorite Animal</label>
-    </div>
-    <div class="col-75">
-      <input type="text" name="favoriteanimal" id="favoriteanimal" placeholder="Cat person? Dog person? Love badgers? Put it here!"/> 
-    </div>
-  </div>
-      <div class="row">
-        <div class="col-25">
-      <label for="motto">Motto</label>
-    </div>
-    <div class="col-75">
-      <input type="text" name="motto" id="motto" placeholder="Yolo!" /> 
-    </div>
-  </div>
-      <div class="row">
-        <div class="col-25">
-      <label for="networth">Networth</label>
-    </div>
-    <div class="col-75">
-      <input type="text" name="networth" id="networth" placeholder="We won't tell anyone...." /> 
-    </div>
-  </div>
-      <div class="row">
-        <div class="col-25">
-      <label for="carmake">Car Make</label>
-    </div>
-    <div class="col-75">
-      <input type="text" name="carmake" id="carmake" placeholder="Flex on your friends!" /> 
-    </div>
-  </div>
-      <div class="row">
-       <div class="col-25">
-      <label for="favmoviegenre">Favorite Movie Genre</label>
-    </div>
-    <div class="col-75">
-      <input type="text" name="favmoviegenre" id="favmoviegenre" placeholder="We're a bit of spaghetti western fans ourselves.." /> 
-    </div>
-  </div>
-      <input type="submit" />
-    </div>
-    </form>
+    <!-- Header -->
+    <header id="header">
+      <nav class="left">
+        <a href="#menu"><span>Menu</span></a>
+      </nav>
+      <a href="index.html" class="logo">SpaghettiO's 4ever</a>
+      <nav class="right">
+        <a href="#" class="button alt">Join us!</a>
+      </nav>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="signup.html">Join The Fan Club</a></li>
+      </ul>
+      <ul class="actions vertical">
+        <li><a href="#" class="button fit">Login</a></li>
+      </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section id="banner">
+      <div class="content">
+        <h1>Love SpaghettiO's? You've come to the right place!</h1>
+        <p>
+          Welcome to the premiere site devoted to the appreciation of
+          SpaghettiO's.<br />Read about us, and join our fan club!
+        </p>
+        <ul class="actions">
+          <li><a href="#one" class="button scrolly">Read About Us</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="wrapper">
+      <div class="inner flex flex-3">
+        <div class="flex-item right">
+          <div>
+            <h3>Thriving Community</h3>
+            <p>
+              We meet every Friday to bond<br />
+              over our love of SpaghettiO's.
+            </p>
+          </div>
+          <div>
+            <h3>Fun Events</h3>
+            <p>
+              Twice a year we meet to see who can best<br />
+              use the ingredient to its fullest potential.
+            </p>
+          </div>
+        </div>
+        <div class="flex-item image fit round">
+          <img src="images/pic01.jpg" alt="" />
+        </div>
+        <div class="flex-item right">
+          <div>
+            <h3>Philanthropy</h3>
+            <p>
+              We fundraise monthly and use the money<br />
+              to donate SpaghettiO's to local food banks.
+            </p>
+          </div>
+          <div>
+            <h3>Membership Benefits</h3>
+            <p>
+              Members of the SpaghettiO's Fan Club<br />
+              receive 15% all purchase of cans.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two -->
+    <section id="two" class="wrapper style1 special">
+      <div class="inner">
+        <h2>Our Mission</h2>
+        <figure>
+          <blockquote>
+            "We here at the SpaghettiO's fan club seek to build brand
+            awareness<br />
+            for the staple of the American diet and help others see the light."
+          </blockquote>
+          <footer>
+            <cite class="author">Scott Johnson</cite>
+            <cite class="company">CEO, SpaghettiO Fan Club LLC</cite>
+          </footer>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Three -->
+    <section id="three" class="wrapper">
+      <h2
+        style="
+          text-align: center;
+          font-family: Open Sans, Arial, Helvetica, sans-serif;
+        "
+      >
+        Some of Our Recipe Breakthroughs
+      </h2>
+      <br />
+      <div class="inner flex flex-3">
+        <div class="flex-item box">
+          <div class="image fit">
+            <img src="images/pic02.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>SpaghettiO Cake</h3>
+            <p>
+              It's SpaghettiO's, but for dessert!
+            </p>
+          </div>
+        </div>
+        <div class="flex-item box">
+          <div class="image fit">
+            <img src="images/pic03.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>SpaghettiO Bun</h3>
+            <p>
+What's more American than hamburgers? SpaghettiO's</br/>  and hamburgers!            </p>
+          </div>
+        </div>
+        <div class="flex-item box">
+          <div class="image fit">
+            <img src="images/pic04.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>SpaghettiO's & Hot Dogs</h3>
+            <p>
+What could go better with SpaghettiO's than loads of processed meat?!            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="inner">
+        <h2>Get In Touch</h2>
+        <ul class="actions">
+          <li>
+            <span class="icon fa-phone"></span> <a href="#">(123) 456-7890</a>
+          </li>
+          <li>
+            <span class="icon fa-envelope"></span>
+            <a href="#">information@welovespaghett.io</a>
+          </li>
+          <li>
+            <span class="icon fa-map-marker"></span> 123 Somewhere Road,
+            Baltimore, MD 00000
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        &copy; SpaghettiO Fan Club LLC.. Design
+        <a href="https://templated.co">TEMPLATED</a>. Images
+        <a href="https://unsplash.com">Unsplash</a>.
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
