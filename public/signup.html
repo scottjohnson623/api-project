@@ -19,7 +19,7 @@
 				<nav class="left">
 					<a href="#menu"><span>Menu</span></a>
 				</nav>
-				<a href="index.html" class="logo">Sign up</a>
+				<a href="index.html" class="logo">SpaghettiO's 4ever</a>
 			</header>
 
 		<!-- Menu -->
@@ -38,6 +38,7 @@
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
+						<h1>Sign Up</h1>
 						<h3><p>Like what we have to offer? Join us!</p></h3>
 					</header>
 
@@ -74,7 +75,7 @@
 
 											<div class="12u$">
 												<ul class="actions">
-													<li><input type="submit" value="Sign Up" /></li>
+													<li><input type="submit" value="Sign Up" id ="signupbutton"/></li>
 												</ul>
 											</div>
 									</form>
@@ -111,6 +112,13 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<<script type="text/javascript">
+				document.getElementById("signupbutton").onclick = function () {
+					location.href = "http://localhost:3000/members.html";
+				};
+			</script>
+			
+
 
 	</body>
 </html>

@@ -2,7 +2,6 @@ import express from "express";
 const port = 3000;
 import { createConnection, getRepository } from "typeorm";
 import { User } from "./entity/User";
-import { SHARE_ENV } from "worker_threads";
 
 async function server() {
   const conn = await createConnection({
@@ -36,13 +35,11 @@ async function server() {
   });
   app.get("/members", (req, res) => {});
   app.post("/", (req, res) => {
-    console.log(req.body);
     let user = new User();
     for (const key in req.body) {
       user[key] = req.body[key];
-      console.log(user);
     }
-    userRepo.save(user).then((user) => res.status(200).send());
+    userRepo.save(user).then((user) => res.status(200).end());
   });
 
   app.patch("/", (req, res) => {
