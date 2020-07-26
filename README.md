@@ -7,15 +7,15 @@
 
 
 ##### The data for Users collected is as follows:
-first_name -String - Required
-last_name - String - Required
-email - String - Nullable
-gender - String - Nullable
-favoriteanimal - String - Nullable
-motto -String - Nullable
-networth - String - Nullable
-carmake - String - Nullable
-favmoviegenre - String - Nullable
+-first_name -String - Required
+-last_name - String - Required
+-email - String - Nullable
+-gender - String - Nullable
+-favoriteanimal - String - Nullable
+-motto -String - Nullable
+-networth - String - Nullable
+-carmake - String - Nullable
+-favmoviegenre - String - Nullable
 
 
 
