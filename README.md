@@ -7,15 +7,15 @@
 
 
 ##### The data for Users collected is as follows:
--first_name -String - Required
--last_name - String - Required
--email - String - Nullable
--gender - String - Nullable
--favoriteanimal - String - Nullable
--motto -String - Nullable
--networth - String - Nullable
--carmake - String - Nullable
--favmoviegenre - String - Nullable
+- first_name -String - Required
+- last_name - String - Required
+- email - String - Nullable
+- gender - String - Nullable
+- favoriteanimal - String - Nullable
+- motto -String - Nullable
+- networth - String - Nullable
+- carmake - String - Nullable
+- favmoviegenre - String - Nullable
 
 
 
@@ -36,3 +36,11 @@
 
 ###### Patch
 "/" - Takes a partial user object and updates the user in the database.
+
+To get started and use this repo:
+
+1. yarn install
+2. create a database in postgres, and configure the ormconfig.json file and the connection in src/index.ts
+3. run "yarn migrate" and "yarn seed" to create the user table and populate it with seed info
+4. run "yarn start" and navigate to the server URL
+5. enjoy! 
