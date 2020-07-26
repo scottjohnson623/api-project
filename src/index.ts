@@ -22,6 +22,9 @@ async function server() {
   console.log("connected");
   const app = express();
   app.use(express.json());
+  app.use(express.static("public"));
+  app.use(express.urlencoded({ extended: true }));
+
   app.get("/allUsers", (req, res) => {
     userRepo.query('SELECT * FROM "user";').then((user) => {
       res.send(user);
