@@ -24,6 +24,7 @@
 
 ###### Get
 "/:id" - brings up the user data with the specified ID
+"/allUsers" - brings up all user data.
 
 
 ###### Post
